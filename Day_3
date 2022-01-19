@@ -1,0 +1,23 @@
+n= int(input("Enter no. entries you want to enter:-"))
+list1=[]
+list2=[]
+list3=[]
+for i in range(n):
+    name = input(f"Enter your name {i+1}:- ")
+    list1.append(name)
+    age = int(input(f"Enter your age {i+1}:- "))
+    list2.append(age)
+    mark = float(input(f"Enter your marks {i+1}:- "))
+    list3.append(mark)
+ 
+
+u =input("Which list you want to see ?(Name,Age,Marks):-")
+if (u =='Name'):
+ for i in list1:
+    print(f"your inputs for Names:- {i}")
+elif(u=='Age'):
+    for i in list2:
+     print(f"your inputs for Age:- {i}")
+elif(u=='Marks'):
+    for i in list3:
+     print(f"your inputs for Marks:- {i}")
